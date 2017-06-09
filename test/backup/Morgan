@@ -1,0 +1,11 @@
+Interview Preparation
+Database
+basic joins and optimization questions
+cursors and all
+Database Design Patterns
+
+
+select A.Request_at Day, round(sum(case when A.Status = 'completed' then 0 else 1 end) / count(*),2) Cancellation_Rate from Trips A,Users B 
+where A.Client_Id = B.Users_Id and B.Banned = 'No' and A.Request_at between '2013-10-01' and '2013-10-03' group by A.Request_at
+
+select A.id from Weather A where A.Temperature > (select Temperature from Weather B where B.Date=DATE_SUB(A.Date,INTERVAL 1 DAY) )

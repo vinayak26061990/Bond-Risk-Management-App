@@ -1,0 +1,54 @@
+./lab3 -aN -oPFS -f32  in1M2 rfile 
+/home/frankeh/Public/mmu -aN -oPFS -f32  in1M2 rfile 
+echo " "
+./lab3 -ar -oPFS -f32  in1M2 rfile
+/home/frankeh/Public/mmu -ar -oPFS -f32  in1M2 rfile
+echo " "
+./lab3 -af -oPFS -f32  in1M2 rfile 
+/home/frankeh/Public/mmu -af -oPFS -f32  in1M2 rfile 
+echo " "
+./lab3 -as -oPFS -f32  in1M2 rfile 
+/home/frankeh/Public/mmu -as -oPFS -f32  in1M2 rfile 
+echo " "
+./lab3 -ac -oPFS -f32  in1M2 rfile 
+/home/frankeh/Public/mmu -ac -oPFS -f32  in1M2 rfile 
+echo " "
+./lab3 -aX -oPFS -f32  in1M2 rfile 
+/home/frankeh/Public/mmu -aX -oPFS -f32  in1M2 rfile 
+echo " "
+./lab3 -aa -oPFS -f32  in1M2 rfile 
+/home/frankeh/Public/mmu -aa -oPFS -f32  in1M2 rfile 
+echo " "
+./lab3 -aY -oPFS -f32  in1M2 rfile 
+/home/frankeh/Public/mmu -aY -oPFS -f32  in1M2 rfile 
+
+
+
+./lab3 -aN -oPFS -f64   in1M2 rfile 
+/home/frankeh/Public/mmu -aN -oPFS -f64   in1M2 rfile 
+echo " "
+./lab3 -ar -oPFS -f64   in1M2 rfile
+/home/frankeh/Public/mmu -ar -oPFS -f64   in1M2 rfile
+echo " "
+./lab3 -af -oPFS -f64   in1M2 rfile 
+/home/frankeh/Public/mmu -af -oPFS -f64   in1M2 rfile 
+echo " "
+./lab3 -as -oPFS -f64   in1M2 rfile 
+/home/frankeh/Public/mmu -as -oPFS -f64   in1M2 rfile 
+echo " "
+./lab3 -ac -oPFS -f64   in1M2 rfile 
+/home/frankeh/Public/mmu -ac -oPFS -f64   in1M2 rfile 
+echo " "
+./lab3 -aX -oPFS -f64   in1M2 rfile 
+/home/frankeh/Public/mmu -aX -oPFS -f64   in1M2 rfile 
+echo " "
+./lab3 -aa -oPFS -f64   in1M2 rfile 
+/home/frankeh/Public/mmu -aa -oPFS -f64   in1M2 rfile 
+echo " "
+./lab3 -aY -oPFS -f64   in1M2 rfile 
+/home/frankeh/Public/mmu -aY -oPFS -f64   in1M2 rfile 
+
+
+
+
+

@@ -1,0 +1,10 @@
+run.sh is to run the server
+
+compile the client using the following commands-
+
+
+
+g++ -g   -c -o sbb_client.o sbb_client.c
+g++  -pg -L. sbb_client.o -o clientdriver
+
+run_client.sh is to run the client

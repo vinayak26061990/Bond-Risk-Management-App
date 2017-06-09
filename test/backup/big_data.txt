@@ -1,0 +1,18 @@
+create table yelp_data(source_type string,id string,restaurant_name string,review_count smallint,rating float,zip smallint,latitude double,longitude double,address string,cuisine string) row format delimited fields terminated by ',' stored as textfile;
+load data INPATH '/user/cloudera/hiveInput/sample.csv' overwrite into table yelp_data;
+create table filtered_yelp_data(source_type string,id string,restaurant_name string,review_count smallint,rating float,zip smallint,latitude double,longitude double,address string,cuisine string) row format delimited fields terminated by ',' stored as textfile;
+insert into filtered_table yelp_data select distinct A.* from yelp_data A where zip is not  null and rating >0;
+export table filtered_yelp_data to 'user/cloudera/hiveInput/filtered_yelp_data';
+
+create table zomato_data(source_type string,id string,restaurant_name string,review_count smallint,rating float,zip smallint,latitude double,longitude double,address string,cuisine string) row format delimited fields terminated by ',' stored as textfile;
+load data INPATH '/user/cloudera/hiveInput/sample.csv' overwrite into table zomato_data;
+create table filtered_zomato_data(source_type string,id string,restaurant_name string,review_count smallint,rating float,zip smallint,latitude double,longitude double,address string,cuisine string) row format delimited fields terminated by ',' stored as textfile;
+insert into filtered_table zomato_data select distinct A.* from zomato_data A where zip is not  null and rating >0;
+export table filtered_zomato_data to 'user/cloudera/hiveInput/filtered_zomato_data';
+
+create table google_places_data(source_type string,id string,restaurant_name string,review_count smallint,rating float,zip smallint,latitude double,longitude double,address string,cuisine string) row format delimited fields terminated by ',' stored as textfile;
+load data INPATH '/user/cloudera/hiveInput/sample.csv' overwrite into table google_places_data;
+create table filtered_google_places_data(source_type string,id string,restaurant_name string,review_count smallint,rating float,zip smallint,latitude double,longitude double,address string,cuisine string) row format delimited fields terminated by ',' stored as textfile;
+insert into filtered_table google_places_data select distinct A.* from google_places_data A where zip is not  null and rating >0;
+export table filtered_google_places_data to 'user/cloudera/hiveInput/filtered_google_places_data';
+
